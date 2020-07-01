@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index Page</title>
+
+<style>
+	
+.grid {
+  display: inline-flex;       
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.forward, .backward {
+  flex: 0 0 100%;
+  text-align: center; 
+  color: white;
+}
+
+
+.left, .right {
+  flex: 1 0 1%;
+  display: flex;
+}
+
+.left  { justify-content: flex-end; }
+.right { justify-content: flex-start; }
+
+</style>
+	
+	
+	
+</head>
+
+<body>
+	
+<div class="grid">
+	
+  <form class="forward"> 
+   <button formaction="F.php"> Forward </button>
+  </form> 
+	
+  <form class="left">
+    <button formaction="L.php">Left</button>
+  </form>
+	
+  <form class="stop">
+    <button formaction="stop.php">STOP</button>
+  </form>
+	
+  <form class="right">
+    <button formaction="R.php">Right</button>
+  </form>
+	
+  <form class="backward">
+    <button formaction="B.php">Backward</button>
+  </form>
+
+	
+</div>
+	
+</body>
+</html>
