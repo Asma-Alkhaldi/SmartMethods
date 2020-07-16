@@ -1,0 +1,20 @@
+.grid {
+  display: inline-flex;       
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.forward, .backward {
+  flex: 0 0 100%;
+  text-align: center; 
+  color: white;
+}
+
+
+.left, .right {
+  flex: 1 0 1%;
+  display: flex;
+}
+
+.left  { justify-content: flex-end; }
+.right { justify-content: flex-start; }
